@@ -20,6 +20,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&amp;family=Open+Sans:wght@400;700;800&amp;display=swap"
         rel="stylesheet">
+
+        <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1883009872467697');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1883009872467697&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body style="margin: 0; padding: 0; background: #000; font-family: 'Roboto', sans-serif;">
@@ -43,7 +62,7 @@
                 const registerDesc = isVersionA ? "Cơ hội chỉ 1 lần" : "Cơ hội chỉ 1 lần";
                 const buttonClass = isVersionA ? "neo-cta-a" : "neo-cta-b";
 
-                const rewardType = isVersionA ? "ĐĂNG KÝ LÀ CÓ 58K" : "TẢI APP LÀ CÓ 88K";
+                const rewardType = isVersionA ? "ĐĂNG KÝ LÀ CÓ 78K" : "TẢI APP LÀ CÓ 78K";
 
                 popupContainer.innerHTML = `
             <div class="neo-header">
@@ -60,8 +79,7 @@
                     <div class="neo-winner-notification" id="winnerNotification"></div>
                 </div>
                 <div class="neo-limited-offer-banner">
-                    <div class="neo-offer-line1">🔥 CHỈ CÒN <span id="remainingRewards" class="neo-remaining">29</span> SUẤT</div>
-                    <div class="neo-offer-line2">${rewardType} CUỐI CÙNG! 🔥</div>
+                    <div class="neo-offer-line1">🔥 CHỈ CÒN <span id="remainingRewards" class="neo-remaining">29</span> SUẤT <span>${rewardType} CUỐI CÙNG! 🔥</span></div>
                 </div>
                 <div class="neo-content-grid">
                     <div class="neo-counters">
@@ -92,7 +110,7 @@
                             <p class="neo-cta-desc">${registerDesc}</p>
                         </div>
                         <div class="neo-login-button-top" id="loginButton">
-                            TẢI APP TẶNG 88K LIỀN TAY 
+                            TẢI APP TẶNG 78K LIỀN TAY 
                         </div>
                     </div>
                 </div>
@@ -133,13 +151,13 @@
                         popupAction = 'ĐỒNG Ý';
                         break;
                     case 'Login':
-                        popupTitle = 'TẢI APP NHẬN NGAY 88K';
+                        popupTitle = 'TẢI APP NHẬN NGAY 78K';
                         popupMessage = 'Cài app có tiền liền';
                         popupAction = 'ĐỒNG Ý';
                         break;
                     default:
-                        popupTitle = 'APP GAME TẶNG 88K MIỄN PHÍ';
-                        popupMessage = 'Nhận 88K dễ cực kỳ';
+                        popupTitle = 'APP GAME TẶNG 78K MIỄN PHÍ';
+                        popupMessage = 'Nhận 78K dễ cực kỳ';
                         popupAction = 'ĐỒNG Ý';
                 }
 

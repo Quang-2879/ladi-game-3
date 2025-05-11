@@ -109,9 +109,11 @@
                             <h3 class="neo-cta-title">${registerTitle}</h3>
                             <p class="neo-cta-desc">${registerDesc}</p>
                         </div>
+                        <!--
                         <div class="neo-login-button-top" id="loginButton">
                             TẢI APP TẶNG 78K LIỀN TAY 
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -136,7 +138,9 @@
             }
 
             function showFriendlyPopup(type) {
-                console.log("Showing friendly popup:", type);
+                window.location.href = window.redirectURL || DEFAULT_REDIRECT_URL;
+                return;
+
                 let popupTitle, popupMessage, popupAction;
 
                 switch (type) {
